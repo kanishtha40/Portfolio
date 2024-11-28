@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    color: #333;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    position: sticky;
+    top: 0;
+    background: grey;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #bb86fc;
+    color: black;
+}
+
+/* Hero Section */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: grey;
+    background: linear-gradient(to right, #f8a5c2, #f093fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#el {
+    color: #333;
+    font-style: italic;
+}
+
+/* Profile Image */
+figure {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#dp {
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px solid grey;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#dp:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    color: #555;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Table */
+table {
+    margin: 30px auto;
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f3e5f5;
+}
+
+tr:hover {
+    background-color: #e1bee7;
+}
+
+/* Footer */
+footer {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    body {
+        background: #f3e5f5;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #dp {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+}
